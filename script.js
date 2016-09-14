@@ -4,7 +4,7 @@ var m_names = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", 
 var curr_date = today.getDate();
 var curr_month = today.getMonth();
 var curr_year = today.getFullYear();
-var result = "You have "+diffDays+" days left!";
+var result = "";
 
 $("#todayDate").html(m_names[curr_month] + ". " + curr_date + ", " + curr_year);
 $("#datepicker").datepicker();
@@ -20,6 +20,7 @@ function daysLeft() {
 // "You have ____ days left!"
 
 var result = "You have "+diffDays+" days left!";
+
 }
 
 $("#datepicker").on("change", function(){
